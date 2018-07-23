@@ -280,7 +280,7 @@ section{
 .nav{
     position: fixed;
     z-index: 666;
-    bottom: 0;
+    bottom: 1.5rem;
     right: 0;
     background: #fff;
     width: 100%;

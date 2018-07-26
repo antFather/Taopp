@@ -145,7 +145,8 @@ a{
 .hd >ul> .on{
     background: #fff;
 }
-/* 电影列表 */
+
+/* 正在热映 */
 or{
     color: #fea54c;
     margin-left: .138889rem;
@@ -164,6 +165,38 @@ section{
     border-bottom: .027778rem solid #eee;
     overflow: hidden;
 }
+.poster::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: rgba(235,235,235,1);
+    border-radius: 50%;;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 0;
+    right: 6px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.poster::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid #000;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 .movie-item>div{
     float: left;
 }
@@ -174,6 +207,7 @@ section{
    padding-right: .222222rem;
     width: 25%;
     box-sizing: border-box;
+     position: relative;
 }
 
 .movie-item .introduction{
@@ -272,9 +306,102 @@ section{
     background-image: linear-gradient(45deg, #55c2ff, #349cec)
 }
 
+/* 即将上映 */
+.time{
+    width: 100%;
+    background-color: rgb(245,245,245);
+    font-size: 14px;
+    line-height: 36px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    color: #333;
+}
+.item{
+    padding:15px;
+}
+.upcoming .rule{
+    width: 20%;
+}
+.upcoming .details{
+    width: 55%;
+}
+.upcoming .busy{
+    padding-right: 20px;
+    box-sizing: border-box;
+}
 
-
-
+/* 选择城市 */
+.selectCity{
+    width: 100%;
+}
+.header-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+     width: 100%;
+     height: 45px;
+}
+.selectCity header{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+    position: relative;
+}
+.selectCity header::before{
+    content: 'X';
+    color: #777777;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    font-family:  Arial;
+    /* font-weight: bold; */
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.current-title{
+    color: #777;
+    background: #eee;
+    font-size: 14px;
+    padding: 10px 0 10px 15px;
+}
+.current-city{
+    color: #777;
+    /* background: #eee; */
+    font-size: 14px;
+    padding: 10px 0 10px 15px;
+}
+.citylist{
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.citylist >li{
+    width: 100%;
+    border-bottom : 1px solid #e9e9e9;
+    padding: 10px 0px;
+    font-size:  14px;
+    color: #777;
+    overflow: hidden;
+}
+.words{
+    position: fixed;
+    top: 50px;
+    right: 10px;
+}
+.words>li{
+    font-size: 12px;
+    color: #349cec;
+    overflow: hidden;
+    padding: 2px 0;
+    text-align: center
+}
 
 /* nav */
 .nav{

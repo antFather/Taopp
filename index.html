@@ -4,63 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" href="//f.m.taopiaopiao.com/img/favicon.ico">
-    <link rel="Shortcut Icon" href="//f.m.taopiaopiao.com/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./image/favicon.ico">
+    <link rel="Shortcut Icon" href="./image/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="js/tpp.js"></script>
     <link rel="stylesheet" href="./css/tpp.css">
     <title>淘票票移动端</title>
 </head>
 
 <body>
     <div class="wrap">
-        <header class="md-header">
+        <header class="md-header hide">
             <div class="city">
                 <div class="i-logo"></div>
                 <div class="city-btn">上海</div>
             </div>
             <div class="header-tab">
                 <ul>
-                    <li>正在热映</li>
-                    <li>即将上映</li>
+                    <li class="reying" data-index="0">正在热映</li>
+                    <li class="shangying" data-index="1">即将上映</li>
                     <li class="tab-line"></li>
                 </ul>
             </div>
         </header>
-        <section class="showing">
+        <section class="showing hide">
             <div class="banner-wrap">
-                <div class="banner">
-                    <div class="bd">
-                        <a href=""><img src="./image/banner (1).webp" alt=""></a>
-                        <a href="">
-                            <img src="./image/banner (10).webp" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./image/banner (11).webp" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./image/banner (12).webp" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./image/banner (5).webp" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./image/banner (6).webp" alt="">
-                        </a>
-
-                    </div>
-                    <div class="hd">
-                        <ul>
-                            <li class="on"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="./image/banner1.webp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="./image/banner10.webp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="./image/banner11.webp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="./image/banner12.webp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="./image/banner5.webp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="./image/banner6.webp" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="hd">
+                    <ul>
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
             </div>
+
             <div class="movie-wrap">
                 <div class="movie-item">
                     <div class="poster">
@@ -73,7 +91,8 @@
                             <i class="pm-2">IMAX</i>
                         </div>
                         <p class="score">
-                            观众评分<or>9.0</or>
+                            观众评分
+                            <or>9.0</or>
                         </p>
                         <p class="director">
                             导演：罗森·马歇尔·瑟伯
@@ -101,7 +120,8 @@
                             <i class="pm-2">IMAX</i>
                         </div>
                         <p class="score">
-                            观众评分<or>9.4</or>
+                            观众评分
+                            <or>9.4</or>
                         </p>
                         <p class="director">
                             导演：文牧野
@@ -130,7 +150,8 @@
                             <i class="pm-2">IMAX</i>
                         </div>
                         <p class="score">
-                            观众评分<or>7.7</or>
+                            观众评分
+                            <or>7.7</or>
                         </p>
                         <p class="director">
                             导演：姜文
@@ -155,8 +176,9 @@
                             <i class="pm-2">IMAX</i>
                         </div>
                         <p class="score">
-                           <i><or>1365659</or>人想看</i>
-                           <i>本周五上映</i>
+                            <i>
+                                <or>1365659</or>人想看</i>
+                            <i>本周五上映</i>
                         </p>
                         <p class="director">
                             导演：闫非 彭大魔
@@ -181,7 +203,8 @@
                             <i class="pm-2">中国巨幕</i>
                         </div>
                         <p class="score">
-                            观众评分<or>8.3</or>
+                            观众评分
+                            <or>8.3</or>
                         </p>
                         <p class="director">
                             导演：托尼·班克罗夫特
@@ -206,8 +229,9 @@
                             <i class="pm-2">IMAX</i>
                         </div>
                         <p class="score">
-                           <i><or>420423</or>人想看</i>
-                           <i>本周五上映</i>
+                            <i>
+                                <or>420423</or>人想看</i>
+                            <i>本周五上映</i>
                         </p>
                         <p class="director">
                             导演：徐克
@@ -287,7 +311,7 @@
                     </div>
                     <p class="score">
                         <or>4756</or>
-                         人想看
+                        人想看
                     </p>
                     <p class="director">
                         导演：李权峰
@@ -296,7 +320,7 @@
                         主演：李昂霖 林奕勋 阿本
                     </p>
                 </div>
-                <div class="btn-wrap busy"> 
+                <div class="btn-wrap busy">
                     <a href="" class="busy-btn blue">预售</a>
                 </div>
             </div>
@@ -319,7 +343,7 @@
                         主演：王洛勇 王亚军 刘永生
                     </p>
                 </div>
-                <div class="btn-wrap busy"> 
+                <div class="btn-wrap busy">
                     <a href="" class="busy-btn blue">预售</a>
                 </div>
             </div>
@@ -340,7 +364,7 @@
                         导演：高峰 张馨
                     </p>
                     <p class="actor">
-                       主演：何达 郑昊 杨俊生 卢秋宏
+                        主演：何达 郑昊 杨俊生 卢秋宏
                     </p>
                 </div>
                 <div class="btn-wrap busy">
@@ -348,87 +372,94 @@
                 </div>
             </div>
         </section>
-       <div class="selectCity hide">
-           <div class="header-wrap">
-           <header>选择城市</header>
+        <div class="selectCity">
+            <div class="header-wrap">
+                <header>选择城市</header>
+                <div class="off-icon">X</div>
             </div>
-           <div class="current-title">当前</div>
-           <div class="current-city"> 佛山</div>
+            <div class="current-title before">当前</div>
+            <div class="current-city"> 佛山</div>
             <div class="current-title">全国</div>
-           <ul class="citylist">
-               <li>北京</li>
-               <li>上海</li>
-               <li>深圳</li>
-               <li>武汉</li>
-               <li>广州</li>
-               <li>佛山</li>
-               <li>南昌</li>
-               <li>温州</li>
-               <li>赣州</li>
-               <li>宜春</li>
-               <li>杭州</li>
-               <li>天津</li>
-               <li>长沙</li>
-               <li>常德</li>
-               <li>金华</li>
-               <li>上饶</li>
-               <li>洛阳</li>
-               <li>苏州</li>
-               <li>南京</li>
-               <li>昆明</li>
-               <li>厦门</li>
-               <li>大连</li>
-               <li>沈阳</li>
-           </ul>
-           <ul class="words">
-               <li>当前</li>
-               <li>A</li>
-               <li>B</li>
-               <li>C</li>
-               <li>D</li>
-               <li>E</li>
-               <li>F</li>
-               <li>G</li>
-               <li>H</li>
-               <li>I</li>
-               <li>J</li>
-               <li>K</li>
-               <li>L</li>
-               <li>M</li>
-               <li>N</li>
-               <li>O</li>
-               <li>P</li>
-               <li>Q</li>
-               <li>R</li>
-               <li>S</li>
-               <li>T</li>
-               <li>U</li>
-               <li>V</li>
-               <li>W</li>
-               <li>X</li>
-               <li>Y</li>
-               <li>Z</li>
-           </ul>
-       </div>
-    
+            <ul class="citylist">
+                <li>北京</li>
+                <li>上海</li>
+                <li>深圳</li>
+                <li>武汉</li>
+                <li>广州</li>
+                <li>佛山</li>
+                <li>南昌</li>
+                <li>温州</li>
+                <li>赣州</li>
+                <li>宜春</li>
+                <li>杭州</li>
+                <li>天津</li>
+                <li>长沙</li>
+                <li>常德</li>
+                <li>金华</li>
+                <li>上饶</li>
+                <li>洛阳</li>
+                <li>苏州</li>
+                <li>南京</li>
+                <li>昆明</li>
+                <li>厦门</li>
+                <li>大连</li>
+                <li>沈阳</li>
+            </ul>
+            <ul class="words">
+                <li>当前</li>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+                <li>G</li>
+                <li>H</li>
+                <li>I</li>
+                <li>J</li>
+                <li>K</li>
+                <li>L</li>
+                <li>M</li>
+                <li>N</li>
+                <li>O</li>
+                <li>P</li>
+                <li>Q</li>
+                <li>R</li>
+                <li>S</li>
+                <li>T</li>
+                <li>U</li>
+                <li>V</li>
+                <li>W</li>
+                <li>X</li>
+                <li>Y</li>
+                <li>Z</li>
+            </ul>
+        </div>
     </div>
-    <div class="nav">
+    <div class="nav hide">
         <div class="nav-wrap">
-            <a href="" class="wode">
+            <a href="javascript:viod(0)" class="wode hot-wrap">
                 <span class="hot icon"></span>
                 <span class="icon-text">热映</span>
             </a>
-            <a href="" class="wode">
+            <a href="javascript:viod(0)" class="wode movieicon-wrap">
                 <span class="movie icon"></span>
                 <span class="icon-text">影院</span>
             </a>
-            <a href="" class="wode">
+            <a href="javascript:viod(0)" class="wode self-wrap">
                 <span class="self icon"></span>
                 <span class="icon-text">我的</span>
             </a>
         </div>
     </div>
-  
+
+
+    <!-- <script type="text/javascript">
+ jQuery(".banner-wrap").slide({
+        mainCell: ".bd ul",
+        autoPlay: true
+    });
+</script> -->
 
 </body>
 

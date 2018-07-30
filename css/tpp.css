@@ -44,6 +44,7 @@ a{
 /* 开始header */
 .wrap{
     width:100%;
+    margin-bottom : 3rem;
     /* position: relative; */
 }
 .md-header{
@@ -109,19 +110,34 @@ a{
     bottom: .055556rem;
 }
 /* banner */
-.banner{
+.showing,
+.banner-wrap {
     width: 100%;
-    position: relative;
-    height: 4.069444rem;
+    height: 4.222222rem;
+}
+
+.banner-wrap {
+    width: 100%;
+    height: 152px;
     overflow: hidden;
+    position: relative;
 }
-.bd>a{
-    display: block;
-    position: absolute;
-   
-}
-.bd > a>img{
+
+.banner-wrap .bd {
+    position: relative;
     width: 100%;
+    z-index: 0;
+}
+
+.banner-wrap .bd li {
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.banner-wrap .bd img {
+    width: 375px;
+    height: 152px;
+    display: block;
 }
 
 .hd{
@@ -158,6 +174,7 @@ section{
     width: 100%;
     background: #fff;
     padding: 0 .416667rem;
+    margin-bottom: 3rem;
 }
 .movie-item{
     width: 100%;
@@ -340,6 +357,7 @@ section{
     left: 0;
      width: 100%;
      height: 45px;
+    
 }
 .selectCity header{
     width: 100%;
@@ -352,8 +370,7 @@ section{
     border-bottom: 1px solid #e9e9e9;
     position: relative;
 }
-.selectCity header::before{
-    content: 'X';
+.off-icon {
     color: #777777;
     font-size: 20px;
     width: 45px;
@@ -365,6 +382,9 @@ section{
     position: absolute;
     right: 0;
     top: 0;
+}
+.before{
+    margin-top: 45px;
 }
 .current-title{
     color: #777;

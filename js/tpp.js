@@ -27,12 +27,14 @@ $(document).ready(function(){
     })
     $('.header-tab>ul>li').click(function () {
         $(this).css('color', '#ff4d64').siblings().css('color', '#777');
-        // $(this).siblings().css('color', '#777');
-        var index = $(this).data('index');
-        var liwidth = $(this).width();
-        var Xrule = index * liwidth ;
-        var trans = `translate3d(${Xrule}px, 0px, 0px)`; //注意这不是引号，是tab件上面的符号
-        // alert(Xrule);
+    });
+    $('.reying').click(function(){
+        var trans = 'translate3d(0px, 0px, 0px)'; 
+        $('.tab-line').css('transform', trans);
+    });
+    $('.shangying').click(function () {
+        var rule = $(this).width()
+        var trans = 'translate3d('+rule+'px, 0px, 0px)';
         $('.tab-line').css('transform', trans);
     });
 
